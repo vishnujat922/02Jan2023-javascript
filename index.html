@@ -61,7 +61,7 @@
 
     </script>
     <script>
-        // function define inside tha class
+        // function define inside the class
         class MyClass {//PascalCase
             //1. property/variables
             student2name = "Pushpendra"; //define and initilization
@@ -77,17 +77,37 @@
             myFunction2() {
                 alert(`Hello ${this.student2name} ${this.student2surname}, Good Morning Have A Nice Day`);
             }
-            //myFunction3 = () => { //Fat Arrow notation
-            // alert('Hello ${this.student3name} ${this.student3surname},Good Morning Have A Nice Day');
-            // }
+
             myFunction3
         }
         //function calling
         //let object = new ClassName();
-        //object.method
         let object2 = new MyClass("From-Neemuch");
+        //object.method
         object2.myFunction2();
 
+    </script>
+    <script>
+        // function define inside the class
+        class MyClass01 {
+            //1. property/value
+            student1name = "Sampat"; // function defination and initilization
+            student1surname; // surname only define
+            //2. constructor
+            constructor(sname) {
+                this.student1surname = sname;
+            }
+
+            //3. method
+            myFunction() {
+                alert(`Hello ${this.student1name} ${this.student1surname} , Good Evening  complete And Submit today's Assignment`);
+            }
+        }
+        //function calling
+        //let object  = new ClassName();
+        let object = new MyClass01("Prajapat");
+        //let object.method
+        object.myFunction();
     </script>
 </body>
 
