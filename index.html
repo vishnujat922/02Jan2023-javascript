@@ -109,6 +109,48 @@
         //let object.method
         object.myFunction();
     </script>
+    <script>
+        // function define inside the class
+        class MyClass02{
+            //1. Property/Value
+            studentname = "Goutam";
+            studentsurname;
+            //2. constructor
+            constructor(sname){
+                this.studentsurname = sname;
+            }
+            //3. method
+            myFunction(){
+                alert(`Hello ${this.studentname} ${this.studentsurname} , GoodEvening Fullstack Development student from OKLabs`);
+            }
+        }
+        //function Calling
+        // let object = new ClassName();
+        let object02 = new MyClass02("Sharma"); 
+        //let object.method
+        object02.myFunction();
+    </script>
+    <script>
+        // function define inside the class
+        class MyClass03{
+            //1. Property/Value
+            studentname = "Pankaj";
+            studentsurname;
+            //2. Constructor
+            constructor(sname){
+                this.studentsurname = sname;
+            }
+            //3. method
+            myFunction(){
+                alert(`Hello ${this.studentname} ${this.studentsurname}, congratulations for live project work`)
+            }
+        }
+        //function Calling
+        //let object = new ClassName();
+        let object03 = new MyClass03("Rathore");
+        //let object.Method
+        object03.myFunction();
+    </script>
 </body>
 
 </html>
