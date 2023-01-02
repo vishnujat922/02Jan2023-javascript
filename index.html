@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript arrow notation</title>
+    <style>
+
+    </style>
+    <script>
+        // I can write js code before the clossing of head tag 
+
+    </script>
+</head>
+
+<body>
+
+    <script>
+        // I can write js code before the clossing of body tag
+        //define a function with old way
+        // function defination
+        /*
+                    function myFunction1(x){ // x is formal arguemnt
+                alert("Hello"+x+"from myfunction1");
+            }
+
+            //2. Function invocation/Calling
+            myFunction1('Anil'); //Actual Argument 
+
+        */
+        function myFunction1(x) {// x is a formal argument
+            alert("Hello" + x + "from myfunction1");
+        }
+        //function callling
+        myFunction1('Vishnu');
+
+        //let define a function with new way
+        myFunction = (y) => { //y is a formal argument
+            alert(`Hello ${y} OKlabs Frontend development Afternoon`)
+        }
+        //function envocation/execution/execute/calling
+        myFunction('Suryabhansingh');// this is a actual argument
+    </script>
+    <script>
+        // function define and calling using javascript object
+        let student = {
+            //1. p:v
+            name: "virendra",
+            surname: "jaat",
+            name2: "rakesh",
+            surname2: "kharol",
+            //2. method
+            displayFullName() {//camelCase
+                alert(`Hello ${this.name} ${this.surname} And ${this.name2} ${this.surname2}, wel come to OKlabs`);
+            }
+        }
+        // function calling
+        student.displayFullName();
+
+    </script>
+    <script>
+        // function define inside tha class
+        class MyClass {//PascalCase
+            //1. property/variables
+            student2name = "Pushpendra"; //define and initilization
+            student2surname; // surname only define
+
+            //2. Constructor
+            constructor(sname) {
+                this.student2surname = sname;
+            }
+
+            //3. Method
+            //Method defination 
+            myFunction2() {
+                alert(`Hello ${this.student2name} ${this.student2surname}, Good Morning Have A Nice Day`);
+            }
+            //myFunction3 = () => { //Fat Arrow notation
+            // alert('Hello ${this.student3name} ${this.student3surname},Good Morning Have A Nice Day');
+            // }
+            myFunction3
+        }
+        //function calling
+        //let object = new ClassName();
+        //object.method
+        let object2 = new MyClass("From-Neemuch");
+        object2.myFunction2();
+
+    </script>
+</body>
+
+</html>
